@@ -1,0 +1,200 @@
+/* Reset some default styles */
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #333; /* Màu nền header */
+    color: #fff; /* Màu chữ header */
+    padding: 20px; /* Khoảng cách giữa nội dung header và biên */
+    display: flex;
+    justify-content: space-between; /* Căn chỉnh nội dung và menu sang hai bên */
+    align-items: center; /* Căn chỉnh nội dung và menu theo chiều dọc */
+  
+}
+
+header h1 {
+    font-size: 24px; /* Kích thước chữ tiêu đề */
+    white-space: pre;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline; /* Hiển thị menu theo hàng ngang */
+    margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+nav ul li a {
+    text-decoration: none; /* Loại bỏ đường link mặc định */
+    color: #fff; /* Màu chữ menu */
+    font-weight: bold; /* Chữ menu đậm */
+    
+}
+nav ul li a:hover {
+transition: 0.5s;
+color: white;
+font-size: 0.8vw;
+}
+
+   
+
+
+/* Banner Styles */
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ẩn phần ngoài biên của banner */
+    max-height: 200px; /* Chiều cao tối đa của banner */
+}
+
+#banner img {
+    max-width: 300px;
+    max-height: 300px;  /* Chiều rộng tối đa của hình ảnh banner */
+    height: auto; /* Đảm bảo tỷ lệ khung hình ảnh */
+ 
+    display: none; /* Ẩn ảnh ban đầu */
+}
+
+/* JavaScript sẽ hiển thị ảnh trong showBanner() */
+.boxsp {
+    float: left;
+    width: 32%;
+    min-height: 300px;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.boxsp img {
+    min-height: 230px;
+    text-align: center;
+    height: 220px;
+}
+
+.nav ul {
+    padding: 0px 10px;
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 0px 15px;
+}
+
+.menu ul li a {
+    color: #CCC;
+    text-decoration: none;
+    transition: 0,5s;
+}
+
+
+/* Styling for the container row */
+.row {
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styling for the form title */
+.frutitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.frutitle h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styling for the form content */
+.frmcontent {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form input fields */
+.mb10 {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Styling for the form buttons */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+/* CSS for frmtitle */
+.frmtitle {
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    color: #666;
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+/* CSS for frucontent */
+.frucontent {
+    padding: 20px 0px;
+}
+
+/* CSS for frudsloai table */
+.frudsloai table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.frudsloai table th {
+    
+    padding: 20px;
+    background-color: #CCC;
+}
+
+/* .frudsloai table th:nth-child(2) {
+    width: 30%;
+    background-color: #ccc;
+}
+
+.frudsloai table th:nth-child(3) {
+    width: 40%;
+    background-color: #ccc;
+}
+
+.frudsloai table th:nth-child(4) {
+    width: 20%;
+    background-color: #ccc;
+} */
+.frudsloai table td { 
+    padding: 10px 20px;
+    border: 1px #CCC solid;
+}
